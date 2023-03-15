@@ -1,0 +1,95 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: #f1d2c142;
+     font-family: sans-serif;
+ }
+
+ .container {
+     width: 500px;
+     margin: 20px auto;
+     margin-top: 50px;
+ }
+
+ @media (max-width:600px) {
+     .container {
+         width: 80vw;
+     }
+ }
+
+ @media (max-width:350px) {
+     .container {
+         width: 95vw;
+     }
+ }
+
+ h1 {
+     text-align: center;
+     color: #905050;
+ }
+
+ .container .form {
+     background: #ffffff;
+     display: flex;
+     align-items: center;
+     border: 2px solid rgb(238, 238, 238);
+     border-radius: 6px;
+     padding: 20px;
+ }
+
+
+ .text {
+     padding: 10px;
+     border: 1px solid #ddd;
+     border-radius: 6px;
+     flex: 1;
+ }
+
+ .text:focus {
+     outline: none;
+ }
+
+ .add,
+ .tasks .task button {
+     border: none;
+     background-color: #e98d8d;
+     color: white;
+     padding: 10px;
+     border-radius: 6px;
+     margin-left: 10px;
+     cursor: pointer;
+ }
+
+ .add:hover {
+     background-color: #c27e7e;
+ }
+
+ .tasks {
+     background: #ffffff;
+     border: 2px solid rgb(238, 238, 238);
+     margin-top: 20px;
+     border-radius: 6px;
+     padding: 20px;
+ }
+
+ .tasks .task {
+     background-color: white;
+     padding: 10px;
+     border-radius: 6px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     transition: 0.3s;
+     cursor: pointer;
+     border: 1px solid #ccc;
+ }
+
+ .tasks .task:not(:last-child) {
+     margin-bottom: 15px;
+ }
+
+ .tasks .task:hover {
+     background-color: #f1d2c142;
+ }
